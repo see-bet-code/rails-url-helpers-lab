@@ -1,1 +1,12 @@
 <h1><%= @student.to_s %></h1>
+
+
+
+<div><%= 
+    case @student.active
+    when false 
+        "This student is currently inactive."
+    else
+    "This student is currently active."
+    end
+    %></div>
